@@ -31,5 +31,4 @@ public:
 	virtual SItemProperties* GetProperties()  { return  &m_sItemProperties; }
 private:
 	SItemProperties m_sItemProperties, m_sPrevItemProperties;
-
 };
