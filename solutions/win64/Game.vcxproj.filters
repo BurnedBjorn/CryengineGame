@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\StdAfx.cpp" />
+    <ClCompile Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\solutions\win64\Code_uber.cpp">
+      <Filter>UBER FILES</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\solutions\win64\Components_uber.cpp">
+      <Filter>UBER FILES</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\GamePlugin.cpp" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\GamePlugin.h" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\StdAfx.h" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemComponent.cpp">
+      <Filter>Components\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemComponent.h">
+      <Filter>Components\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemProperties.h">
+      <Filter>Components\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.cpp">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.h">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerInput.cpp">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerUpdate.cpp">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.cpp">
+      <Filter>Components\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.h">
+      <Filter>Components\Gameplay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\solutions\win64\Game.autogen.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Components">
+      <UniqueIdentifier>{8175A548-6EA0-3045-8219-F7F39EADAEC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Gameplay">
+      <UniqueIdentifier>{44DB451D-3259-3EBE-9341-C718A53C633E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Item">
+      <UniqueIdentifier>{D3E82DAB-BA1D-32EB-AB50-C8EB37FDC85F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Player">
+      <UniqueIdentifier>{4A21CBC0-DD50-35B9-9D9A-EECB7C123E51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{B71382F5-9A4D-39A1-A642-79C8E02E1E81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UBER FILES">
+      <UniqueIdentifier>{DFA7D7D6-DBA4-3122-A076-B4EB911582E7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

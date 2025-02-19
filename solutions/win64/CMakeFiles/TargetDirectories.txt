@@ -1,0 +1,9 @@
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/Game.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/GameLauncher.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/Editor.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/GameServer.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/INSTALL.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/ALL_BUILD.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CMakeFiles/ZERO_CHECK.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CRYENGINE/CMakeFiles/INSTALL.dir
+D:/.GameDev/Projects/CRYENGINE projects/Clone/solutions/win64/CRYENGINE/CMakeFiles/ALL_BUILD.dir
