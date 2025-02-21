@@ -22,6 +22,15 @@
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemProperties.h">
       <Filter>Components\Item</Filter>
     </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponComponent.cpp">
+      <Filter>Components\Item\Weapons\Melee</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponComponent.h">
+      <Filter>Components\Item\Weapons\Melee</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponProperties.h">
+      <Filter>Components\Item\Weapons\Melee</Filter>
+    </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.cpp">
       <Filter>Components\Player</Filter>
     </ClInclude>
@@ -32,6 +41,12 @@
       <Filter>Components\Player</Filter>
     </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerUpdate.cpp">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.cpp">
+      <Filter>Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.h">
       <Filter>Components\Player</Filter>
     </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.cpp">
@@ -58,6 +73,12 @@
     </Filter>
     <Filter Include="Components\Item">
       <UniqueIdentifier>{D3E82DAB-BA1D-32EB-AB50-C8EB37FDC85F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Item\Weapons">
+      <UniqueIdentifier>{EC26B031-149D-3E5B-8D26-F1B062CE897D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Item\Weapons\Melee">
+      <UniqueIdentifier>{ADBDFB21-5E05-3ECA-AED9-43C07ED0255A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components\Player">
       <UniqueIdentifier>{4A21CBC0-DD50-35B9-9D9A-EECB7C123E51}</UniqueIdentifier>

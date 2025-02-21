@@ -307,10 +307,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemComponent.cpp" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemComponent.h" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemProperties.h" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponComponent.cpp" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponComponent.h" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponProperties.h" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.cpp" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.h" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerInput.cpp" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerUpdate.cpp" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.cpp" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.h" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.cpp" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.h" />
     <ClCompile Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\solutions\win64\Code_uber.cpp">

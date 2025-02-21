@@ -3,8 +3,10 @@
 
 #include <StdAfx.h>
 #include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/ItemComponent.cpp>
+#include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/MeleeWeaponComponent.cpp>
 #include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/Player.cpp>
 #include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/PlayerInput.cpp>
 #include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/PlayerUpdate.cpp>
+#include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/InventoryComponent.cpp>
 #include <D:/.GameDev/Projects/CRYENGINE projects/Clone/Code/Components/SpawnPoint.cpp>
 

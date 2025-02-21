@@ -1,5 +1,6 @@
 #include "StdAfx.h"
 #include "Player.h"
+
 void CPlayerComponent::InitializeInput()
 {
 	// Get the input component, wraps access to action mapping so we can easily get callbacks when inputs are triggered
@@ -24,6 +25,9 @@ void CPlayerComponent::InitializeInput()
 
 	m_pInputComponent->RegisterAction("player", "mouse_rotatepitch", [this](int activationMode, float value) { m_mouseDeltaRotation.y -= value; });
 	m_pInputComponent->BindAction("player", "mouse_rotatepitch", eAID_KeyboardMouse, EKeyId::eKI_MouseY);
+
+	m_pInputComponent->RegisterAction("player", "use", [this](int activationMode, float value) {Action_use(activationMode);	});
+	m_pInputComponent->BindAction("player", "use", eAID_KeyboardMouse, EKeyId::eKI_E);
 
 
 }
@@ -58,5 +62,25 @@ void CPlayerComponent::HandleInputFlagChange(const CEnumFlags<EInputFlag> flags,
 	if (IsLocalClient())
 	{
 		NetMarkAspectsDirty(InputAspect);
+	}
+}
+
+void CPlayerComponent::Action_use(int activationMode)
+{
+	switch (activationMode)
+	{
+	case eIS_Pressed:
+	{
+		if (m_pTargetItem)
+		{
+			m_pTargetItem->PickUp(this);
+			string nm = m_pTargetItem->GetEntity()->GetName();
+			CryLog(nm);
+		}
+		CryLog("PickUp");
+	}
+	break;
+	default:
+		break;
 	}
 }

@@ -2,7 +2,7 @@
 #include "ItemComponent.h"
 #include <CrySchematyc/Env/Elements/EnvComponent.h>
 #include "CryPhysics/physinterface.h"
-
+#include "Components/Player.h"
 
 
 #include <CrySchematyc/Reflection/TypeDesc.h>
@@ -15,7 +15,7 @@
 #include <CrySchematyc/MathTypes.h>
 #include <CrySchematyc/Utils/SharedString.h>
 #include <CryCore/StaticInstanceList.h>
-
+/*
 namespace{
 	static void RegisterItem(Schematyc::IEnvRegistrar& registar)
 	{
@@ -27,17 +27,17 @@ namespace{
 		}
 	}
 	CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterItem)
-}
+}*/
 void SItemComponent::Initialize()
 {
 	LoadGeometry();
 	Physicalise();
-
+	InitializeClass();
 }
 
 Cry::Entity::EventFlags SItemComponent::GetEventMask() const
 {
-	return Cry::Entity::EEvent::EditorPropertyChanged;
+	return Cry::Entity::EEvent::EditorPropertyChanged ;
 }
 
 void SItemComponent::ProcessEvent(const SEntityEvent& event)
@@ -57,6 +57,7 @@ void SItemComponent::ProcessEvent(const SEntityEvent& event)
 	default:
 		break;
 	}
+	ProcessEventClass(event);
 }
 
 
@@ -66,11 +67,8 @@ void SItemComponent::ProcessEvent(const SEntityEvent& event)
 void SItemComponent::ReflectType(Schematyc::CTypeDesc<SItemComponent>& desc)
 {
 	desc.SetGUID("{6CAA8B9A-8923-49B1-B620-FBCF089AAC8E}"_cry_guid);
-	desc.SetLabel("ItemComponent");
-	desc.SetDescription("Base Item Component");
-	desc.AddMember(&SItemComponent::m_sItemProperties, 'itep', "ItemProperties", "Item Properties", "This Item's Properties",SItemProperties());
-	desc.SetEditorCategory("Item");
-	desc.SetComponentFlags(IEntityComponent::EFlags::Singleton);
+	
+	
 }
 
 void SItemComponent::LoadGeometry()
@@ -87,4 +85,20 @@ void SItemComponent::Physicalise()
 	physParams.mass = GetProperties()->m_sPhysicsProperties.m_fMass;
 	physParams.type = PE_RIGID;
 	m_pEntity->Physicalize(physParams);
+}
+
+
+void SItemComponent::PickUp(CPlayerComponent* pNewOwner)
+{
+	if (!pNewOwner)
+	{
+		return;
+	}
+	m_pOwner = pNewOwner;
+	m_pOwner->GetEntity()->AttachChild(m_pEntity);
+}
+
+bool SItemComponent::IsPickable()
+{
+	return !m_pOwner;
 }
