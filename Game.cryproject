@@ -18,6 +18,7 @@
 	"require": {
 		"engine": "engine-5.7",
 		"plugins": [
+			{ "guid": "", "type": "EType::Native", "path": "CryScaleform"},
 			{ "guid": "", "type": "EType::Native", "path": "CryDefaultEntities" },
 			{ "guid": "", "type": "EType::Native", "path": "CrySensorSystem" },
 			{ "guid": "", "type": "EType::Native", "path": "CryScaleformSchematyc" },

@@ -1,0 +1,12 @@
+<UIElements name = "HUD">
+	<UIElement name = "CrosshairAnimated">
+		<GFx file="CrosshairAnimated.gfx" layer ="0">
+				<Constraints>
+					<Align mode="dynamic" valign="center" hallign="center"/>
+				</Constraints>
+		</Gfx>
+		<functions>
+			<function name="shoot" funcname="shoot"/>
+		</functions>
+	</UIElement>
+</UIElements> 

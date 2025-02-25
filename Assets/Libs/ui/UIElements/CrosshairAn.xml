@@ -1,0 +1,14 @@
+<UIElements name="CrosshairAn">
+  <!-- Object name, again, of your own choosing -->
+  <UIElement name="CrosshairAn" render_lockless="1">
+    <!-- Point it to the correct files and give it some default settings -->
+    <GFx file="CrosshairAn.gfx" layer="0">
+      <Constraints>
+        <Align mode="dynamic" valign="center" halign="center" scale="0" max="0"/>
+      </Constraints>
+    </GFx>
+	<functions>
+			<function name="shoot" funcname="shoot"/>
+		</functions>
+  </UIElement>
+</UIElements>

@@ -13,6 +13,30 @@
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\GamePlugin.cpp" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\GamePlugin.h" />
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\StdAfx.h" />
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.cpp">
+      <Filter>Components\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.h">
+      <Filter>Components\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.cpp">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.h">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerInput.cpp">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerUpdate.cpp">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\UserInterfaceComponent.h">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\UserInterfaceComponent.cpp">
+      <Filter>Components\Entity\Player</Filter>
+    </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\ItemComponent.cpp">
       <Filter>Components\Item</Filter>
     </ClInclude>
@@ -30,24 +54,6 @@
     </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\MeleeWeaponProperties.h">
       <Filter>Components\Item\Weapons\Melee</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\Player.h">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerInput.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\PlayerUpdate.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.cpp">
-      <Filter>Components\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\InventoryComponent.h">
-      <Filter>Components\Player</Filter>
     </ClInclude>
     <ClInclude Include="D:\.GameDev\Projects\CRYENGINE projects\Clone\Code\Components\SpawnPoint.cpp">
       <Filter>Components\Gameplay</Filter>
@@ -68,6 +74,12 @@
     <Filter Include="Components">
       <UniqueIdentifier>{8175A548-6EA0-3045-8219-F7F39EADAEC4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Components\Entity">
+      <UniqueIdentifier>{AA047C7D-B85D-3D1C-AE8E-30D1ED4AC447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Entity\Player">
+      <UniqueIdentifier>{B4EB7511-AE09-3161-A05E-BCCB274D6652}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Components\Gameplay">
       <UniqueIdentifier>{44DB451D-3259-3EBE-9341-C718A53C633E}</UniqueIdentifier>
     </Filter>
@@ -79,9 +91,6 @@
     </Filter>
     <Filter Include="Components\Item\Weapons\Melee">
       <UniqueIdentifier>{ADBDFB21-5E05-3ECA-AED9-43C07ED0255A}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Player">
-      <UniqueIdentifier>{4A21CBC0-DD50-35B9-9D9A-EECB7C123E51}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{B71382F5-9A4D-39A1-A642-79C8E02E1E81}</UniqueIdentifier>

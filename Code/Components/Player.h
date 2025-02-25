@@ -16,6 +16,8 @@
 #include <DefaultComponents/Input/InputComponent.h>
 #include <DefaultComponents/Audio/ListenerComponent.h>
 
+#include <FlashUI/FlashUI.h>
+
 #include "ItemComponent.h"
 
 ////////////////////////////////////////////////////////
@@ -183,4 +185,7 @@ protected:
 
 
 	SItemComponent* m_pTargetItem = nullptr;
+
+
+	IUIElement* m_pCrosshair;
 };
