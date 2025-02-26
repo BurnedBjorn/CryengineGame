@@ -16,7 +16,8 @@
 #include <DefaultComponents/Input/InputComponent.h>
 #include <DefaultComponents/Audio/ListenerComponent.h>
 
-#include <FlashUI/FlashUI.h>
+#include "UserInterfaceComponent.h"
+
 
 #include "ItemComponent.h"
 
@@ -169,6 +170,8 @@ protected:
 	Cry::DefaultComponents::CInputComponent* m_pInputComponent = nullptr;
 	Cry::Audio::DefaultComponents::CListenerComponent* m_pAudioListenerComponent = nullptr;
 
+	CPlayerUI* m_pPlayerUI = nullptr;
+
 	FragmentID m_idleFragmentId;
 	FragmentID m_walkFragmentId;
 	TagID m_rotateTagId;
@@ -187,5 +190,5 @@ protected:
 	SItemComponent* m_pTargetItem = nullptr;
 
 
-	IUIElement* m_pCrosshair;
+	
 };

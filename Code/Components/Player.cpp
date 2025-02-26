@@ -48,7 +48,7 @@ void CPlayerComponent::Initialize()
 	// Load the character and Mannequin data from file
 	m_pAnimationComponent->LoadFromDisk();
 
-	m_pCrosshair = gEnv->pFlashUI->GetUIElement("CrosshairAn");
+	m_pPlayerUI = m_pEntity->GetOrCreateComponent<CPlayerUI>();
 
 	
 	// Acquire fragment and tag identifiers to avoid doing so each update
@@ -111,14 +111,7 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 		// Update the animation state of the character
 		UpdateAnimation(frameTime);
 
-		if (m_pCrosshair)
-		{
-			CryLog("Crosshair");
-		}
-		if (!m_pCrosshair)
-		{
-			CryLog("No");
-		}
+		
 		if (IsLocalClient())
 		{
 			// Update the camera component offset

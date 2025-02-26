@@ -5787,8 +5787,8 @@
 			"type": "Animation",
 			"guid": "a41303bf-bc0f-6509-b7c3-a8f3744539d9",
 			"name": "walk_fwd_3p",
-			"timestamp": 132973673640740000,
-			"files": [ "animations/motusanims/walk_fwd_3p.caf" ],
+			"timestamp": 1652893764,
+			"files": [ "Animations/motusAnims/walk_fwd_3p.caf" ],
 			"workFiles": [ ],
 			"source": "",
 			"metadata": "Animations/motusAnims/walk_fwd_3p.caf.cryasset",
@@ -5811,7 +5811,7 @@
 			"type": "Level",
 			"guid": "984fcd77-e594-2b34-fbf5-414a47e0d684",
 			"name": "example",
-			"timestamp": 1739984729,
+			"timestamp": 1740522527,
 			"files": [ "Levels/example/example.level" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5873,11 +5873,11 @@
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/objects/primitive_cube.cgf",
+					"path": "%engine%/engineassets/objects/primitive_box.cgf",
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/objects/primitive_cylinder.cgf",
+					"path": "%engine%/engineassets/objects/primitive_cube.cgf",
 					"usageCount": 0
 				},
 				{
@@ -6117,6 +6117,7 @@
 					"usageCount": 0
 				},
 				{ "path": "libs/environmentpresets/example.env", "usageCount": 1 },
+				{ "path": "libs/flownodes/substitutions.xml", "usageCount": 0 },
 				{
 					"path": "objects/characters/samplecharacter/mcg_ddna.dds",
 					"usageCount": 0
