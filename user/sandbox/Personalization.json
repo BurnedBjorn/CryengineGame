@@ -352,5 +352,10 @@
         "Recent Files": [
             "assets/Levels/example/example.level"
         ]
+    },
+    "Schematyc Editor": {
+        "Recent Files": [
+            "schematyctest.schematyc_ent.cryasset"
+        ]
     }
 }

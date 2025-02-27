@@ -22,7 +22,22 @@ CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterPlayerUI)
 
 void CPlayerUI::Initialize()
 {
-	m_pRedRectangle = gEnv->pFlashUI->GetUIElement("RedRectangle");
+	if (gEnv->pFlashUI)
+	{
+		m_pRedRectangle = gEnv->pFlashUI->GetUIElement("RedRectangle");
+		m_pTestButton = gEnv->pFlashUI->GetUIElement("TestButton");
+		if (m_pTestButton)
+		{
+			m_pTestButton->AddEventListener(&m_ButtonEventListener,"aa");
+			
+		}
+		
+	}
+	
+	
+	m_pOwner = m_pEntity->GetComponent<CPlayerComponent>();
+
+	
 }
 
 Cry::Entity::EventFlags CPlayerUI::GetEventMask() const
@@ -36,15 +51,16 @@ void CPlayerUI::ProcessEvent(const SEntityEvent& event)
 	{
 	case Cry::Entity::EEvent::GameplayStarted:
 	{
-		m_pRedRectangle->SetVisible(true);
-		if (m_pRedRectangle->IsVisible())
+		if (m_pTestButton)
 		{
-			CryLog("Visible");
+			m_pTestButton->SetVisible(true);
+			m_pTestButton->SetFlag(IUIElement::EFlashUIFlags::eFUI_HARDWARECURSOR, true);
+			m_pTestButton->SetFlag(IUIElement::EFlashUIFlags::eFUI_MOUSEEVENTS, true);
 		}
-		else
-		{
-			CryLog("notVisible");
-		}
+		//gEnv->pHardwareMouse->IncrementCounter();
+		CryLog("GameplayStarted");
+		
+		
 	}
 	break;
 	default:
@@ -59,4 +75,20 @@ void CPlayerUI::ReflectType(Schematyc::CTypeDesc<CPlayerUI>& desc)
 	desc.SetLabel("Player UI");
 }
 
+void CButtonEventListener::Switch(IUIElement* pTarget, bool state)
+{
+	pTarget->SetVisible(state);
+	pTarget->SetFlag(IUIElement::EFlashUIFlags::eFUI_HARDWARECURSOR, state);
+	pTarget->SetFlag(IUIElement::EFlashUIFlags::eFUI_MOUSEEVENTS, state);
+}
 
+void CButtonEventListener::OnUIEvent(IUIElement* pSender, const SUIEventDesc& event, const SUIArguments& args)
+{
+	
+	const string Click = "Click";
+	if (event.sDisplayName==Click)
+	{
+		Switch(pSender, false);
+	}
+	
+}

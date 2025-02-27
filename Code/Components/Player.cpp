@@ -118,6 +118,9 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 			UpdateCamera(frameTime);
 		}
 
+
+		
+
 		Update(frameTime);
 	}
 	break;
